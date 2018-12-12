@@ -1,57 +1,46 @@
-package graphicLayer.Modele;
+package graphicLayer.modele;
 
-import graphicLayer.Interface.IOservable;
-import graphicLayer.Interface.IOservableSatellite;
-import graphicLayer.ObjetVue.SatelliteObject;
+import graphicLayer.announcer.Observer;
+import graphicLayer.environment.Environment;
+import graphicLayer.event.Event;
+import graphicLayer.object.SatelliteObject;
+import graphicLayer.Properties;
 
-import java.util.ArrayList;
 
-public class Satellite extends Entite implements IOservable, IOservableSatellite {
+public class Satellite extends Entite implements Observer {
 
-    private ArrayList<Balise> observers;
-    private ArrayList<SatelliteObject> observersVue;
+    private SatelliteObject observerVue;
 
     public Satellite(int width, int height){
-        observers = new ArrayList<>();
-        observersVue = new ArrayList<>();
         this.setPosition(new Position(width,height));
-    }
-
-    public ArrayList<Balise> getObservers() {
-        return observers;
+        this.vitesse = Integer.parseInt(Properties.getInstance().getPropertie("vitesseSatellite"));
     }
 
 
-    public void addObserver(Balise o){
-        this.observers.add(o);
-    }
-    public void deleteObserver(Balise o){
-        if(observers.isEmpty()) new Exception("Vous essayer de supprimer un observer balise alors que la liste est vide");
-        this.observers.remove(o);
-    }
 
-    public void addObserver(SatelliteObject s){
-        this.observersVue.add(s);
-    }
-
-    public void deleteObserver(SatelliteObject s){
-        if(observersVue.isEmpty()) new Exception("Vous essayer de supprimer un observer satellite alors que la liste est vide");
-        this.observersVue.remove(s);
+    public void setObserversVue(SatelliteObject observersVue) {
+        this.observerVue = observersVue;
     }
 
     public void majVue(){
-        for(SatelliteObject satelliteVue: observersVue){
-            satelliteVue.update(this,null);
-        }
+        observerVue.update(this,null);
     }
 
-    public void majTransfertDonnee(){
-        for(Balise balise: observers){
-            balise.update(this,null);
-        }
+    public void receptionDonnees(){
+        System.out.println("Reception des données");
     }
 
-    public void recevoirDonnees(){
-        System.out.println("Données reçues");
+
+
+    public void receive(Event e){
+
+        if(Math.abs(e.getSource().getPosition().getWidth()-this.getPosition().getWidth()) > 30){
+            return;
+        }
+        e.doEvent(this);
+    }
+
+    public void visit(Environment app){
+        app.actionForSatellite(this);
     }
 }

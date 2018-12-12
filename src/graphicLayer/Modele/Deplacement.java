@@ -1,4 +1,4 @@
-package graphicLayer.Modele;
+package graphicLayer.modele;
 
 
 public abstract class Deplacement {

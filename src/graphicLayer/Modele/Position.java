@@ -1,4 +1,4 @@
-package graphicLayer.Modele;
+package graphicLayer.modele;
 
 public class Position {
 

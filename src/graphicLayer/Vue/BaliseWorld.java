@@ -1,6 +1,6 @@
-package graphicLayer.Vue;
+package graphicLayer.vue;
 
-import graphicLayer.ObjetVue.EntiteVue;
+import graphicLayer.object.EntiteVue;
 
 import java.awt.Graphics;
 import java.awt.Point;
