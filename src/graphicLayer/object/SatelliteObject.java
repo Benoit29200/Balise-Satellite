@@ -13,10 +13,13 @@ public class SatelliteObject extends EntiteVue {
 	}
 
 	public void draw(Graphics g) {
+
 		Color c = g.getColor();
 		g.setColor(color);
-		g.fillRect(bounds.x,bounds.y,bounds.width, bounds.height);
+		//g.fillRect(bounds.x,bounds.y,bounds.width, bounds.height);
 		g.setColor(c);
+		Image image = Toolkit.getDefaultToolkit().getImage("satellite.png");
+		g.drawImage(image,bounds.x,bounds.y,null);
 		super.draw(g);
 	}
 

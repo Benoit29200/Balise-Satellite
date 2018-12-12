@@ -13,7 +13,9 @@ public class SoleilObject extends EntiteVue {
 	public void draw(Graphics g) {
 		Color c = g.getColor();
 		g.setColor(color);
-		g.fillOval(bounds.x,bounds.y,bounds.height,bounds.width);
+		//g.fillOval(bounds.x,bounds.y,bounds.height,bounds.width);
+		Image image = Toolkit.getDefaultToolkit().getImage("soleil.png");
+		g.drawImage(image,bounds.x,bounds.y,null);
 		g.setColor(c);
 		super.draw(g);
 	}

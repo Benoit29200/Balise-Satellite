@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1100bd44-281a-4083-a30b-50ef7246f3fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/graphicLayer/Announcer/Announcer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphicLayer/Announcer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphicLayer/Event/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphicLayer/Event/EventDeplacement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphicLayer/Event/TransmissionDonnees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/App/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/App/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/Interface/IOservableBalise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/Interface/IOservableBalise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/Interface/IOservableSatellite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/Interface/IOservableSatellite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/Modele/Balise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/Modele/Balise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/Modele/DeplacementHorizontal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/Event/DeplacementHorizontal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/Modele/DeplacementVertical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/Event/DeplacementVertical.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/Modele/Satellite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/Modele/Satellite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/ObjetVue/BaliseObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/ObjetVue/BaliseObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/ObjetVue/EntiteVue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/ObjetVue/EntiteVue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/ObjetVue/SatelliteObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/ObjetVue/SatelliteObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphicLayer/ObjetVue/SoleilObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/ObjetVue/SoleilObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Milieu.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/Milieu.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphicLayer/environment/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/environment/Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphicLayer/object/BaliseObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/object/BaliseObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphicLayer/object/CielObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/object/CielObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphicLayer/object/MerObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/object/MerObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphicLayer/object/SatelliteObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/object/SatelliteObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphicLayer/object/SoleilObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphicLayer/object/SoleilObject.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,43 +22,43 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="7" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="145" />
-          <entry key="properties" value="4" />
+          <entry key="java" value="161" />
+          <entry key="properties" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="145" />
-          <entry key="Properties" value="4" />
+          <entry key="JAVA" value="161" />
+          <entry key="Properties" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="9833" />
-          <entry key="properties" value="561" />
+          <entry key="java" value="10002" />
+          <entry key="properties" value="562" />
           <entry key="txt" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9833" />
+          <entry key="JAVA" value="10002" />
           <entry key="PLAIN_TEXT" value="42" />
-          <entry key="Properties" value="561" />
+          <entry key="Properties" value="562" />
         </counts>
       </usages-collector>
     </session>
@@ -75,84 +66,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphicLayer/Modele/Balise.java">
+        <entry file="file://$PROJECT_DIR$/src/graphicLayer/modele/Balise.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="469">
-              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/TransmissionDonnees.java">
+        <entry file="file://$PROJECT_DIR$/src/graphicLayer/environment/Environment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/DeplacementVertical.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphicLayer/App/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="39" column="59" lean-forward="true" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/Event.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/EventDeplacement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graphicLayer/Modele/Satellite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1184#1185#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="161">
+              <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/DeplacementHorizontal.java">
+        <entry file="file://$PROJECT_DIR$/src/Milieu.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="225">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/SatelliteObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" column="50" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicLayer/modele/Entite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/BaliseObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/MerObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/SoleilObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" column="50" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/CielObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/graphicLayer/vue/BaliseWorld.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="62" column="35" lean-forward="true" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -191,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/graphicLayer/ObjetVue/SoleilObject.java" />
         <option value="$PROJECT_DIR$/src/graphicLayer/Properties.java" />
         <option value="$PROJECT_DIR$/src/graphicLayer/ObjetVue/BaliseObject.java" />
-        <option value="$PROJECT_DIR$/src/Milieu.properties" />
         <option value="$PROJECT_DIR$/src/graphicLayer/Modele/DeplacementVertical.java" />
         <option value="$PROJECT_DIR$/src/graphicLayer/Modele/Deplacement.java" />
         <option value="$PROJECT_DIR$/src/graphicLayer/Interface/IOservableSatellite.java" />
@@ -208,6 +205,14 @@
         <option value="$PROJECT_DIR$/src/graphicLayer/Event/DeplacementVertical.java" />
         <option value="$PROJECT_DIR$/src/graphicLayer/Modele/Satellite.java" />
         <option value="$PROJECT_DIR$/src/graphicLayer/Event/DeplacementHorizontal.java" />
+        <option value="$PROJECT_DIR$/src/graphicLayer/environment/Environment.java" />
+        <option value="$PROJECT_DIR$/src/graphicLayer/object/EntiteVue.java" />
+        <option value="$PROJECT_DIR$/src/graphicLayer/object/SatelliteObject.java" />
+        <option value="$PROJECT_DIR$/src/graphicLayer/object/BaliseObject.java" />
+        <option value="$PROJECT_DIR$/src/graphicLayer/object/MerObject.java" />
+        <option value="$PROJECT_DIR$/src/graphicLayer/object/SoleilObject.java" />
+        <option value="$PROJECT_DIR$/src/graphicLayer/object/CielObject.java" />
+        <option value="$PROJECT_DIR$/src/Milieu.properties" />
       </list>
     </option>
   </component>
@@ -228,7 +233,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,40 +256,48 @@
               <item name="Morphic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="graphicLayer" type="462c0819:PsiDirectoryNode" />
-              <item name="Announcer" type="462c0819:PsiDirectoryNode" />
+              <item name="environment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Morphic" type="b2602c69:ProjectViewProjectNode" />
               <item name="Morphic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="graphicLayer" type="462c0819:PsiDirectoryNode" />
-              <item name="Event" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Morphic" type="b2602c69:ProjectViewProjectNode" />
               <item name="Morphic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="graphicLayer" type="462c0819:PsiDirectoryNode" />
-              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="modele" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Morphic" type="b2602c69:ProjectViewProjectNode" />
               <item name="Morphic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="graphicLayer" type="462c0819:PsiDirectoryNode" />
-              <item name="Modele" type="462c0819:PsiDirectoryNode" />
+              <item name="object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Morphic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Morphic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="graphicLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544625913970" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544628839045" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -383,6 +395,7 @@
       <workItem from="1544446659259" duration="3478000" />
       <workItem from="1544540222579" duration="3052000" />
       <workItem from="1544614750639" duration="1473000" />
+      <workItem from="1544625896094" duration="2535000" />
     </task>
     <task id="LOCAL-00001" summary="Initialisation du projet sur Git">
       <created>1544174050609</created>
@@ -395,13 +408,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30011000" />
+    <option name="totallyTimeSpent" value="32546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24345239" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -410,16 +423,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49940476" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49940476" visible="true" weight="0.33673468" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005952" side_tool="true" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -459,17 +472,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphicLayer/Interface/IObserverModele.java" />
     <entry file="file://$PROJECT_DIR$/src/graphicLayer/Interface/IOservableModele.java" />
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Modele/Position.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/modele/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Vue/BaliseWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -487,16 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Modele/Entite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -504,9 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -514,13 +507,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Modele/Deplacement.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/modele/Deplacement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
@@ -545,9 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -555,9 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,9 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-          <folding>
-            <element signature="e#338#349#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -576,13 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Milieu.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -596,7 +570,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Announcer/Announcer.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/App/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="39" column="59" lean-forward="true" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/event/EventDeplacement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/event/DeplacementVertical.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/event/TransmissionDonnees.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/announcer/Announcer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
@@ -607,77 +626,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Announcer/Observer.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/announcer/Observer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Modele/Balise.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/event/DeplacementHorizontal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/modele/Satellite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/modele/Balise.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/TransmissionDonnees.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/vue/BaliseWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="432">
+          <caret line="62" column="35" lean-forward="true" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/DeplacementVertical.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/EntiteVue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        <state relative-caret-position="-14">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/App/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="39" column="59" lean-forward="true" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/EventDeplacement.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/modele/Entite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Modele/Satellite.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/BaliseObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphicLayer/Event/DeplacementHorizontal.java">
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/MerObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="180">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/SatelliteObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/SoleilObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/object/CielObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphicLayer/environment/Environment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Milieu.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
     </entry>

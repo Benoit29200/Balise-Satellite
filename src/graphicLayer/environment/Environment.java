@@ -40,10 +40,8 @@ public class Environment {
 		Integer positionPremiereBalise = Integer.parseInt(Properties.getInstance().getPropertie("positionPremiereBalise"));
 		Integer hauteurSatellite = Integer.parseInt(Properties.getInstance().getPropertie("hauteurSatellite"));
 
-
 		ArrayList<Entite> entites = new ArrayList<>();
 		ArrayList<EntiteVue> entitesVue = new ArrayList<>();
-
 
 		// environnement de la fenêtre
 		BaliseWorld jc = new BaliseWorld("Transmission entre balises et satellites");
@@ -55,7 +53,6 @@ public class Environment {
 		Dimension dimSatellite = new Dimension(dimensionSatellite,dimensionSatellite);
 		Dimension dimCiel = new Dimension(niveauDeLeau,widthScreen);
 		Dimension dimSoleil = new Dimension(dimensionSoleil,dimensionSoleil);
-
 
 		// Création des balises et leur vue
 		for(int i=positionPremiereBalise; i < widthScreen;i+=widthScreen/nombreBalise){
@@ -81,9 +78,7 @@ public class Environment {
 
 			announcer.register(s,DeplacementHorizontal.class);
 			announcer.register(s, TransmissionDonnees.class);
-
 		}
-
 
 		// Ajout de la mer, du ciel et du soleil dans la fenêtre
 		jc.add(new MerObject(Color.BLUE,new Point(0,niveauDeLeau),dimMer));
@@ -98,9 +93,7 @@ public class Environment {
 		// ouverture de la fenêtre
 		jc.open();
 
-
 		while (true) {
-
 			// Déplacement des satellites
 			for(Entite entite: entites){
 				entite.visit(this);
