@@ -8,13 +8,13 @@ public class BaliseObject extends EntiteVue {
 
 	public BaliseObject(Color color, Point pos, Dimension dim) {
 		super(color, pos, dim);
+		image = Toolkit.getDefaultToolkit().getImage("balise.png");
 	}
 
 	public void draw(Graphics g) {
 		Color c = g.getColor();
 		g.setColor(color);
 		//g.fillOval(bounds.x,bounds.y,bounds.height,bounds.width);
-		Image image = Toolkit.getDefaultToolkit().getImage("balise.png");
 		g.drawImage(image,bounds.x,bounds.y,null);
 		g.setColor(c);
 		super.draw(g);

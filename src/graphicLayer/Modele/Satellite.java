@@ -18,7 +18,7 @@ public class Satellite extends Entite implements Observer {
 
 
 
-    public void setObserversVue(SatelliteObject observersVue) {
+    public void setObserverVue(SatelliteObject observersVue) {
         this.observerVue = observersVue;
     }
 
@@ -27,7 +27,7 @@ public class Satellite extends Entite implements Observer {
     }
 
     public void receptionDonnees(){
-        System.out.println("Reception des données");
+        //System.out.println("Reception des données");
     }
 
 

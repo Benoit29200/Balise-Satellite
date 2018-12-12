@@ -13,6 +13,9 @@ public abstract class EntiteVue {
 	protected Rectangle bounds;
 	protected Color color;
 	protected List<EntiteVue> submorphs = new ArrayList<EntiteVue>();
+	protected Image image;
+
+
 
 	public EntiteVue(Color color, Point pos, Dimension dim) {
 		this.color = color;
@@ -37,6 +40,14 @@ public abstract class EntiteVue {
 			EntiteVue m = itor.next();
 			m.draw(g);
 		}
+	}
+
+	public Image getImage() {
+		return image;
+	}
+
+	public void setImage(Image image) {
+		this.image = image;
 	}
 
 	public Rectangle getBounds() {

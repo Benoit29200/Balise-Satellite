@@ -9,7 +9,16 @@ import java.awt.*;
 public class SatelliteObject extends EntiteVue {
 
 	public SatelliteObject(Color color, Point pos, Dimension dim) {
-		super(color, pos, dim);		
+		super(color, pos, dim);
+		image = Toolkit.getDefaultToolkit().getImage("satellite.png");
+	}
+
+	public Image getImage() {
+		return image;
+	}
+
+	public void setImage(Image image) {
+		this.image = image;
 	}
 
 	public void draw(Graphics g) {
@@ -18,7 +27,6 @@ public class SatelliteObject extends EntiteVue {
 		g.setColor(color);
 		//g.fillRect(bounds.x,bounds.y,bounds.width, bounds.height);
 		g.setColor(c);
-		Image image = Toolkit.getDefaultToolkit().getImage("satellite.png");
 		g.drawImage(image,bounds.x,bounds.y,null);
 		super.draw(g);
 	}

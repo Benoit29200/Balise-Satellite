@@ -13,14 +13,43 @@ import graphicLayer.Properties;
 import graphicLayer.vue.BaliseWorld;
 
 import java.awt.*;
-import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Set;
 
 public class Environment {
 
+	BaliseWorld jc;
+
 	private Announcer announcer;
 
+	LinkedHashMap<String,Entite> entites;
+	LinkedHashMap<String,EntiteVue> entitesVue;
+
+	public BaliseWorld getJc() {
+		return jc;
+	}
+
+	public Announcer getAnnouncer() {
+		return announcer;
+	}
+
+
+	public LinkedHashMap<String,Entite> getEntites() {
+		return entites;
+	}
+
+
+	public LinkedHashMap<String,EntiteVue> getEntitesVue() {
+		return entitesVue;
+	}
+
+
 	public Environment(){
-		announcer = new Announcer();
+		this.jc = new BaliseWorld("Transmission entre balises et satellites");
+		this.announcer = new Announcer();
+		entites = new LinkedHashMap<>();
+		entitesVue = new LinkedHashMap<>();
 	}
 
 
@@ -40,11 +69,9 @@ public class Environment {
 		Integer positionPremiereBalise = Integer.parseInt(Properties.getInstance().getPropertie("positionPremiereBalise"));
 		Integer hauteurSatellite = Integer.parseInt(Properties.getInstance().getPropertie("hauteurSatellite"));
 
-		ArrayList<Entite> entites = new ArrayList<>();
-		ArrayList<EntiteVue> entitesVue = new ArrayList<>();
+
 
 		// environnement de la fenêtre
-		BaliseWorld jc = new BaliseWorld("Transmission entre balises et satellites");
 		jc.setPreferredSize(new Dimension(widthScreen,heightScreen));
 
 		//Dimension des objets
@@ -55,26 +82,26 @@ public class Environment {
 		Dimension dimSoleil = new Dimension(dimensionSoleil,dimensionSoleil);
 
 		// Création des balises et leur vue
-		for(int i=positionPremiereBalise; i < widthScreen;i+=widthScreen/nombreBalise){
+		for(int i=positionPremiereBalise,j=1; i < widthScreen;i+=widthScreen/nombreBalise,j++){
 			Balise b = new Balise(i,niveauDeLeau+profondeurBalise);
-			entites.add(b);
+			entites.put("b"+j,b);
 
 			BaliseObject bVue = new BaliseObject(Color.GREEN,new Point(i,niveauDeLeau+profondeurBalise),dimBalise);
-			entitesVue.add(bVue);
+			entitesVue.put("b"+j,bVue);
 
 			announcer.register(b,DeplacementVertical.class);
 			b.setObserverVue(bVue);
 		}
 
 		// Création des satellites et leur vue
-		for(int i = positionPremierSatellite ; i < widthScreen ; i+=widthScreen/nombreSatellite){
+		for(int i = positionPremierSatellite,j=1 ; i < widthScreen ; i+=widthScreen/nombreSatellite,j++){
 			Satellite s = new Satellite(i,hauteurSatellite);
-			entites.add(s);
+			entites.put("s"+j,s);
 
 			SatelliteObject sVue = new SatelliteObject(Color.RED,new Point(i,hauteurSatellite),dimSatellite);
-			entitesVue.add(sVue);
+			entitesVue.put("s"+j,sVue);
 
-			s.setObserversVue(sVue);
+			s.setObserverVue(sVue);
 
 			announcer.register(s,DeplacementHorizontal.class);
 			announcer.register(s, TransmissionDonnees.class);
@@ -86,19 +113,28 @@ public class Environment {
 		jc.add(new SoleilObject(Color.YELLOW,new Point(-dimensionSoleil/2,-dimensionSoleil/2),dimSoleil));
 
 		// ajout des satellites à la fenêtre
-		for(EntiteVue sVue: entitesVue){
-			jc.add(sVue);
+
+		Set<String> cles = entitesVue.keySet();
+		Iterator<String>  ite = cles.iterator();
+		while(ite.hasNext()){
+			jc.add(entitesVue.get(ite.next()));
 		}
 
 		// ouverture de la fenêtre
 		jc.open();
 
+
 		while (true) {
+
+			Iterator<String> iterator = entites.keySet().iterator();
 			// Déplacement des satellites
-			for(Entite entite: entites){
-				entite.visit(this);
-				entite.majVue();
+			while(iterator.hasNext()){
+				Entite e = entites.get(iterator.next());
+				e.visit(this);
+				e.majVue();
 			}
+
+
 			try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
