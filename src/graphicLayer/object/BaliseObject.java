@@ -1,10 +1,12 @@
 package graphicLayer.object;
 
+import graphicLayer.announcer.Observer;
 import graphicLayer.modele.Balise;
+import graphicLayer.modele.Entite;
 
 import java.awt.*;
 
-public class BaliseObject extends EntiteVue {
+public class BaliseObject extends EntiteVue implements Observer {
 
 	public BaliseObject(Color color, Point pos, Dimension dim) {
 		super(color, pos, dim);
@@ -20,7 +22,7 @@ public class BaliseObject extends EntiteVue {
 		super.draw(g);
 	}
 
-	public void update(Balise b, Object o){
+	public void update(Entite b, Object o){
 		Point p = new Point(b.getPosition().getWidth(),b.getPosition().getHeight());
 		this.setPosition(p);
 	}

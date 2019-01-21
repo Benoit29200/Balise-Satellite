@@ -9,26 +9,37 @@ import java.util.List;
 import java.util.Map;
 
 public class Announcer {
-	Map<Class<? extends Event>, List<Observer>> registrationIndex;
+	Map<Class<? extends Event>, List<Observable>> registrationIndex;
 	
 	public Announcer() {
 		registrationIndex = new HashMap<>();
 	}
-	
-	public void register(Observer o, Class<? extends Event> eventClass) {
-		List<Observer> l = registrationIndex.get(eventClass);
+
+	public void register(Observable o, Class<? extends Event> eventClass) {
+		List<Observable> l = registrationIndex.get(eventClass);
 		if (l == null) {
-			l = new ArrayList<Observer>();
+			l = new ArrayList<Observable>();
 			registrationIndex.put(eventClass, l );
 		}
 		l.add(o);
 	}
 
-	public void unregister (Observer o, Class<? extends Event> eventClass) {
-		List<Observer> l = registrationIndex.get(eventClass);
-		Iterator<Observer> itor =  l.iterator();
+	public void announce(Event anEvent) {
+		Class<?> eventClass = anEvent.getClass();
+		List<Observable> l = registrationIndex.get(eventClass);
+		if (l == null) return;
+		Iterator<Observable> itor =  l.iterator();
 		while (itor.hasNext()) {
-			Observer current = itor.next();
+			Observable current = itor.next();
+			current.receive(anEvent);
+		}
+	}
+
+	public void unregister (Observable o, Class<? extends Event> eventClass) {
+		List<Observable> l = registrationIndex.get(eventClass);
+		Iterator<Observable> itor =  l.iterator();
+		while (itor.hasNext()) {
+			Observable current = itor.next();
 			if (o == current) itor.remove();
 		}
 		if (l.isEmpty()) {
@@ -36,14 +47,5 @@ public class Announcer {
 		}
 	}
 	
-	public void announce(Event anEvent) {
-		Class<?> eventClass = anEvent.getClass();
-		List<Observer> l = registrationIndex.get(eventClass);
-		if (l == null) return;
-		Iterator<Observer> itor =  l.iterator();
-		while (itor.hasNext()) {
-			Observer current = itor.next();
-			current.receive(anEvent);
-		}
-	}
+
 }

@@ -34,11 +34,9 @@ public class Environment {
 		return announcer;
 	}
 
-
 	public LinkedHashMap<String,Entite> getEntites() {
 		return entites;
 	}
-
 
 	public LinkedHashMap<String,EntiteVue> getEntitesVue() {
 		return entitesVue;
@@ -95,16 +93,16 @@ public class Environment {
 
 		// Création des satellites et leur vue
 		for(int i = positionPremierSatellite,j=1 ; i < widthScreen ; i+=widthScreen/nombreSatellite,j++){
-			Satellite s = new Satellite(i,hauteurSatellite);
-			entites.put("s"+j,s);
+			Satellite satellite = new Satellite(i,hauteurSatellite);
+			entites.put("s"+j,satellite);
 
 			SatelliteObject sVue = new SatelliteObject(Color.RED,new Point(i,hauteurSatellite),dimSatellite);
 			entitesVue.put("s"+j,sVue);
 
-			s.setObserverVue(sVue);
+			satellite.setObserverVue(sVue);
 
-			announcer.register(s,DeplacementHorizontal.class);
-			announcer.register(s, TransmissionDonnees.class);
+			announcer.register(satellite,DeplacementHorizontal.class);
+			announcer.register(satellite, TransmissionDonnees.class);
 		}
 
 		// Ajout de la mer, du ciel et du soleil dans la fenêtre
@@ -113,7 +111,6 @@ public class Environment {
 		jc.add(new SoleilObject(Color.YELLOW,new Point(-dimensionSoleil/2,-dimensionSoleil/2),dimSoleil));
 
 		// ajout des satellites à la fenêtre
-
 		Set<String> cles = entitesVue.keySet();
 		Iterator<String>  ite = cles.iterator();
 		while(ite.hasNext()){
@@ -123,7 +120,6 @@ public class Environment {
 		// ouverture de la fenêtre
 		jc.open();
 
-
 		while (true) {
 
 			Iterator<String> iterator = entites.keySet().iterator();
@@ -131,9 +127,7 @@ public class Environment {
 			while(iterator.hasNext()){
 				Entite e = entites.get(iterator.next());
 				e.visit(this);
-				e.majVue();
 			}
-
 
 			try {
 				Thread.sleep(100);
@@ -150,15 +144,13 @@ public class Environment {
 		announcer.announce(deplacementHorizontal);
 	}
 
-	public void actionForBalise(Balise b){
+	public void actionForBalise(Balise balise){
 		DeplacementVertical deplacementVertical = new DeplacementVertical();
-		deplacementVertical.setSource(b);
-
+		deplacementVertical.setSource(balise);
 		announcer.announce(deplacementVertical);
 
-		if(b.isPretATransmettre()){
-			announcer.announce(b.getEventTransmissionDonnee());
+		if(balise.isPretATransmettre()){
+			announcer.announce(balise.getEventTransmissionDonnee());
 		}
 	}
-
 }

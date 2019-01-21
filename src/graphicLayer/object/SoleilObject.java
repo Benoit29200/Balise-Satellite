@@ -1,6 +1,7 @@
 package graphicLayer.object;
 
 import graphicLayer.modele.Balise;
+import graphicLayer.modele.Satellite;
 
 import java.awt.*;
 

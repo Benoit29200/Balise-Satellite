@@ -22,8 +22,8 @@ public class TransmissionDonnees implements Event {
     }
 
     public void doEvent(Entite e){
-            source.receptionDonnees();
-            e.receptionDonnees();
+            source.receptionDonnees(); // réception des données
+            e.receptionDonnees(); // transmission  des données
     }
 
 

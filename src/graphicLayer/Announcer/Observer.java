@@ -1,7 +1,9 @@
 package graphicLayer.announcer;
 
-import graphicLayer.event.Event;
+import graphicLayer.modele.Entite;
+import graphicLayer.modele.Satellite;
 
 public interface Observer {
-	void receive(Event e);
+
+    public void update(Entite e, Object o);
 }

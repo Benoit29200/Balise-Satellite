@@ -1,12 +1,14 @@
 
 package graphicLayer.object;
 
+import graphicLayer.announcer.Observer;
+import graphicLayer.modele.Entite;
 import graphicLayer.modele.Satellite;
 
 import java.awt.*;
 
 
-public class SatelliteObject extends EntiteVue {
+public class SatelliteObject extends EntiteVue implements Observer {
 
 	public SatelliteObject(Color color, Point pos, Dimension dim) {
 		super(color, pos, dim);
@@ -31,11 +33,9 @@ public class SatelliteObject extends EntiteVue {
 		super.draw(g);
 	}
 
-	public void update(Satellite obs, Object obj)
+	public void update(Entite s, Object obj)
 	{
-		//TODO
-
-		Point p = new Point(obs.getPosition().getWidth(),obs.getPosition().getHeight());
+		Point p = new Point(s.getPosition().getWidth(),s.getPosition().getHeight());
 		this.setPosition(p);
 	}
 

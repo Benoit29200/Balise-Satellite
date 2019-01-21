@@ -7,10 +7,7 @@ public class DeplacementHorizontal implements Event {
 
     private Entite source;
 
-
-    public DeplacementHorizontal() {
-    }
-
+    public DeplacementHorizontal() { }
 
     @Override
     public Entite getSource() {
@@ -24,11 +21,10 @@ public class DeplacementHorizontal implements Event {
 
     public void doEvent(Entite e){
 
+        // on récupère la largeur de l'écran dans le fichier properties
         int widthScreen = Integer.parseInt(Properties.getInstance().getPropertie("fenetre.width"));
 
+        // on met à jour la position en x de l'entité
         e.getPosition().setWidth((e.getPosition().getWidth()+e.getVitesse()) % widthScreen);
-
     }
-
-
 }

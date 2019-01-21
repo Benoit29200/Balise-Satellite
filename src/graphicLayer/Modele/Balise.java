@@ -1,6 +1,6 @@
 package graphicLayer.modele;
 
-import graphicLayer.announcer.Observer;
+import graphicLayer.announcer.Observable;
 import graphicLayer.environment.Environment;
 import graphicLayer.event.Event;
 import graphicLayer.event.TransmissionDonnees;
@@ -9,7 +9,7 @@ import graphicLayer.Properties;
 
 
 
-public class Balise extends Entite implements Observer{
+public class Balise extends Entite {
 
     BaliseObject observerVue;
 
@@ -46,9 +46,14 @@ public class Balise extends Entite implements Observer{
         observerVue.changeColorForSearching();
     }
 
+    @Override
     public void receive(Event e){
+        // si c'est pas moi qui me suis déplacé, je ne fais rien
         if(e.getSource() != this) return;
+        // sinon j'applique l'évènement sur moi
         e.doEvent(this);
+        // comme je me suis déplacé, je l'indique à mon observer
+        observerVue.update(this,null);
     }
 
     public void visit(Environment app){

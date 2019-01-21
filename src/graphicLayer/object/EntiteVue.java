@@ -1,6 +1,7 @@
 
 package graphicLayer.object;
 
+import graphicLayer.announcer.Observer;
 import graphicLayer.vue.BaliseWorld;
 
 import java.awt.*;
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public abstract class EntiteVue {
+public abstract class EntiteVue{
 	protected BaliseWorld world;
 	protected Rectangle bounds;
 	protected Color color;

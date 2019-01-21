@@ -1,20 +1,13 @@
 package graphicLayer.commande;
 
 import graphicLayer.environment.Environment;
-import graphicLayer.event.DeplacementVertical;
-import graphicLayer.modele.Balise;
-import graphicLayer.modele.Satellite;
-import graphicLayer.object.BaliseObject;
-import graphicLayer.object.SatelliteObject;
-
-import java.awt.*;
 import java.util.Scanner;
 
 public class Interpreteur extends Thread {
 
     Environment environment;
     RemoteControl remote;
-    ChangeImageObjectCommand changeImageObject;
+
     public Interpreteur(Environment environment){
         super();
         this.environment = environment;
@@ -25,16 +18,9 @@ public class Interpreteur extends Thread {
 
         Scanner sc = new Scanner(System.in);
 
-
-
-        String nomBalise="";
-
         while(true){
 
             int choixPrincipal=0;
-            int choixSecondaire=0;
-            int choixTernaire=0;
-
             System.out.println("******  MENU  *******\n");
             System.out.print(" 1- Ajouter balise\n" +
                     " 2- Ajouter satellite\n" +
@@ -93,7 +79,6 @@ public class Interpreteur extends Thread {
 
                 }
 
-
                 case -1: { // Fermer l'application
                     System.exit(0);
                 }
@@ -103,7 +88,6 @@ public class Interpreteur extends Thread {
             }
 
         }
-
 
     }
 }
